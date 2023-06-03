@@ -1,42 +1,169 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 550px;
+  height: auto;
+  background-color: #23252c;
+  margin-top: 6%;
+}
+
+main {
+  padding: 44px 117px;
+}
+/* info */
+
+/* text */
+.main--info {
+  background-color: #1a1b21;
+  border-radius: 10px 10px 0 0;
+}
+.main--info > img {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.main--info .main--text__name,
+h3,
+h4 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.main--info .main--text__name {
+  margin-bottom: 0;
+  font-size: 25px;
+  color: white;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main--info .main--text__role {
+  font-weight: 400;
+  font-size: 12.8px;
+  color: #f3bf99;
+  margin-top: 7px;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main--info .main--text__website {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #f5f5f5;
 }
 
-.card {
-  padding: 2em;
+.main--text {
+  margin-top: 21px;
+}
+/* button */
+.button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.button--email {
+  margin-right: 17px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  width: 115px;
+  height: 34px;
+}
+.button--email:hover {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+.button--email span {
+  margin-right: 8px;
+}
+.button--linkedIn {
+  background: #5093e2;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #5093e2;
+  display: flex;
+  width: 115px;
+  height: 34px;
+  color: white;
+  padding-left: 16px;
+}
+
+.button--linkedIn:hover {
+  background-color: #1e58a0;
+  cursor: pointer;
+}
+.button--linkedIn span {
+  margin-right: 8px;
+}
+/* about */
+.about {
+  background-color: #1a1b21;
+  color: #f5f5f5;
+  padding: 22px 36px 0;
+}
+
+.about h2 {
+  padding-top: 13px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.about p {
+  margin-top: 5px;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #dcdcdc;
+  margin-bottom: 0;
+}
+
+.interests {
+  padding: 22px 36px 0;
+  background-color: #1a1b21;
+}
+
+.interests--title {
+  margin-top: 3px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+}
+
+.interests--text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #dcdcdc;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #161619;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer .icon > img {
+  padding-right: 24px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+img:hover {
+  cursor: pointer;
 }
